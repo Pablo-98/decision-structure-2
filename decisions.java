@@ -17,13 +17,25 @@ public class decisions {
 
         //first we need to setup our scanner
         Scanner input = new Scanner(System.in);
-
+        
+        // question for user
         System.out.println("enter temp bro");
 
+        // allows user to input an int 
         int temp = input.nextInt();
 
-        if (temp >= 80){
-            System.out.println("wear shorts dawg, its hot");
+        // using multiple conditions here, else if statements are meant to be used when multiple conditions can be met. 
+        
+        // when doing an else/if statement with integers, use the greatest value first
+        // use the greatest value first because Java reads the statements in order.
+        if (temp >= 110){
+            System.out.println("do not go outside bruh");
+        } else if( temp >= 80) {
+            System.out.println("wear some mf shorts bruh ");
+        } else if( temp <= 30) {
+            System.out.println("its not worth it yo...");
+        } else {
+            System.out.println("wear shorts");
         }
 
 
